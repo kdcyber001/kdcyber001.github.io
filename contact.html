@@ -1,48 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact - KD Cyber Solutions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — KD Cyber Solutions</title>
+  <meta name="description" content="Contact KD Cyber Solutions for federal IT support, cybersecurity services, and teaming opportunities.">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 <div class="container">
 
-<nav class="nav">
-  <div class="nav-inner">
-    <div class="brand">KD <span>Cyber Solutions</span></div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">KD <span>Cyber Solutions</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="contact-grid">
+
+    <!-- Left: Info -->
+    <div class="contact-info">
+      <div class="section-label">Get in Touch</div>
+      <h2>Let's talk about<br>your IT needs</h2>
+      <p>
+        Whether you're looking for a teaming partner, need direct IT or cybersecurity support,
+        or want to discuss a contract opportunity — reach out and we'll respond promptly.
+      </p>
+
+      <div class="contact-item">
+        <div class="contact-item-icon">✉️</div>
+        <div class="contact-item-body">
+          <div class="contact-item-label">Email</div>
+          <div class="contact-item-value">
+            <a href="mailto:kofi.danso@kdcybersolutions.com">kofi.danso@kdcybersolutions.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item-icon">📍</div>
+        <div class="contact-item-body">
+          <div class="contact-item-label">Location</div>
+          <div class="contact-item-value">Germantown, MD — National Capital Region</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item-icon">🏛️</div>
+        <div class="contact-item-body">
+          <div class="contact-item-label">SAM.gov UEI</div>
+          <div class="contact-item-value">JG23HNK287D3</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item-icon">📄</div>
+        <div class="contact-item-body">
+          <div class="contact-item-label">Capability Statement</div>
+          <div class="contact-item-value">
+            <a href="KD_Cyber_Solutions_Capability_Statement01.pdf" target="_blank">Download PDF ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 36px;">
+        <div class="section-label" style="margin-bottom:14px;">Inquiry Types</div>
+        <div class="tag-list">
+          <span class="tag">Teaming / Subcontracting</span>
+          <span class="tag">IT Support Contract</span>
+          <span class="tag">Vulnerability Assessment</span>
+          <span class="tag">Cloud Services</span>
+          <span class="tag">Compliance Consulting</span>
+          <span class="tag">General Inquiry</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form">
+      <h3 style="font-family:'Syne',sans-serif; font-weight:700; font-size:1.2rem; margin-bottom:24px; letter-spacing:-0.01em;">Send a Message</h3>
+
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Jane Smith" />
+      </div>
+
+      <div class="form-group">
+        <label for="org">Organization</label>
+        <input type="text" id="org" placeholder="Agency or Company Name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="jane@agency.gov" />
+      </div>
+
+      <div class="form-group">
+        <label for="type">Inquiry Type</label>
+        <select id="type">
+          <option value="">Select one...</option>
+          <option>Teaming / Subcontracting</option>
+          <option>IT Support Contract</option>
+          <option>Vulnerability Assessment</option>
+          <option>Cloud Services</option>
+          <option>Compliance Consulting</option>
+          <option>General Inquiry</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Briefly describe your needs or opportunity..."></textarea>
+      </div>
+
+      <button
+        class="btn btn-primary"
+        style="width:100%; justify-content:center;"
+        onclick="handleSubmit()"
+      >
+        Send Message
+      </button>
+
+      <p style="color:var(--muted); font-size:0.8rem; text-align:center; margin-top:16px;">
+        Or email directly: <a href="mailto:kofi.danso@kdcybersolutions.com" style="color:var(--accent);">kofi.danso@kdcybersolutions.com</a>
+      </p>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-brand">KD <span>Cyber Solutions</span></div>
+    <div class="footer-copy">© 2026 KD Cyber Solutions · Germantown, MD</div>
+    <div class="footer-links">
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
-  </div>
-</nav>
-
-<section class="section">
-  <div class="card contact-box">
-    <h2>Contact</h2>
-
-    <p>
-      <a href="mailto:info@kdcybersolutions.com">
-        info@kdcybersolutions.com
-      </a>
-    </p>
-
-    <p style="margin-top:15px; color:#9fb3c8;">
-      <strong>Kofi A. Danso</strong><br>
-      Owner <br>
-      KD Cyber Solutions
-    </p>
-  </div>
-</section>
-
-<footer class="footer">
-  © 2026 KD Cyber Solutions
-</footer>
+  </footer>
 
 </div>
+
+<script>
+function handleSubmit() {
+  const name    = document.getElementById('name').value.trim();
+  const email   = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (!name || !email || !message) {
+    alert('Please fill in your name, email, and message.');
+    return;
+  }
+
+  // Opens the user's mail client with pre-filled content
+  const subject = encodeURIComponent('KD Cyber Solutions Inquiry');
+  const org     = document.getElementById('org').value.trim();
+  const type    = document.getElementById('type').value;
+  const body    = encodeURIComponent(
+    `Name: ${name}\nOrganization: ${org}\nInquiry Type: ${type}\n\n${message}`
+  );
+  window.location.href = `mailto:kofi.danso@kdcybersolutions.com?subject=${subject}&body=${body}`;
+}
+</script>
 </body>
 </html>

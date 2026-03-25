@@ -1,38 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About - KD Cyber Solutions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — KD Cyber Solutions</title>
+  <meta name="description" content="Learn about Kofi Danso and KD Cyber Solutions — federal IT and cybersecurity services based in Germantown, MD.">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 <div class="container">
 
-<nav class="nav">
-  <div class="nav-inner">
-    <div class="brand">KD <span>Cyber Solutions</span></div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">KD <span>Cyber Solutions</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Hero -->
+  <div class="about-hero">
+    <div class="about-text">
+      <div class="section-label">About</div>
+      <h1 style="font-family:'Syne',sans-serif; font-size:clamp(2.2rem,5vw,3.4rem); font-weight:800; letter-spacing:-0.03em; line-height:1.08; margin-bottom:20px;">
+        Kofi Danso<br><span style="color:var(--accent);">KD Cyber Solutions</span>
+      </h1>
+      <p style="color:var(--muted); line-height:1.75; font-weight:300; font-size:1.02rem; margin-bottom:18px;">
+        KD Cyber Solutions is a sole-proprietor federal IT and cybersecurity firm based in
+        Germantown, Maryland. Founded by Kofi Danso, the company draws on enterprise-level
+        experience and a rigorous certification background to deliver dependable security and
+        IT solutions to government contractors and small businesses.
+      </p>
+      <p style="color:var(--muted); line-height:1.75; font-weight:300; font-size:1.02rem; margin-bottom:28px;">
+        Prior to founding KD Cyber Solutions, Kofi served as a Lead Implementation Engineer
+        at Capgemini, where he supported large-scale enterprise IT deployments. He holds a
+        B.S. in Cybersecurity and Information Assurance from Western Governors University
+        and maintains an active portfolio of industry certifications.
+      </p>
+
+      <div class="cert-chips">
+        <span class="cert-chip">CompTIA A+</span>
+        <span class="cert-chip">CompTIA Network+</span>
+        <span class="cert-chip">CompTIA Security+</span>
+        <span class="cert-chip">ISC2 CC</span>
+        <span class="cert-chip">Azure Fundamentals</span>
+        <span class="cert-chip">B.S. Cybersecurity — WGU</span>
+      </div>
+    </div>
+
+    <div class="about-visual">
+      <div class="about-avatar">👤</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Values -->
+  <section class="section">
+    <div class="section-header center">
+      <div class="section-label">Core Values</div>
+      <h2 class="section-title">How we operate</h2>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card" style="text-align:center;">
+        <div class="card-icon" style="margin:0 auto 18px;">🎯</div>
+        <h3>Mission-Focused</h3>
+        <p>Every engagement is treated with the seriousness federal work demands — from security assessments to system support.</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="card-icon" style="margin:0 auto 18px;">📐</div>
+        <h3>Standards-Based</h3>
+        <p>Work is grounded in NIST, DISA STIGs, and CMMC — not workarounds. Compliance is built in, not bolted on.</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="card-icon" style="margin:0 auto 18px;">🤝</div>
+        <h3>Responsive &amp; Direct</h3>
+        <p>Small firm means clear communication, fast turnaround, and no middlemen between you and the person doing the work.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Federal Registration -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-label">Federal Credentials</div>
+      <h2 class="section-title">Ready to contract</h2>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-icon">🏛️</div>
+        <h3>SAM.gov Registration</h3>
+        <p>Active federal registration with Unique Entity Identifier <strong style="color:var(--accent);">JG23HNK287D3</strong>, cleared for direct awards and subcontracting vehicles.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📦</div>
+        <h3>NAICS Coverage</h3>
+        <p>Primary code <strong style="color:var(--accent);">541512</strong> (Computer Systems Design) with additional codes spanning IT consulting, cloud services, and cybersecurity.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <h3>Location &amp; Availability</h3>
+        <p>Based in Germantown, MD — near the DC Metro area. Available for on-site, remote, and hybrid engagements across the National Capital Region.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3>Teaming Ready</h3>
+        <p>Actively pursuing teaming arrangements with prime contractors. Download the capability statement to discuss subcontracting opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding: 0 0 80px; text-align:center;">
+    <a class="btn btn-primary" href="contact.html">Start a Conversation</a>
+    &nbsp;&nbsp;
+    <a class="btn btn-secondary" href="KD_Cyber_Solutions_Capability_Statement01.pdf" target="_blank">Download Cap Statement ↗</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand">KD <span>Cyber Solutions</span></div>
+    <div class="footer-copy">© 2026 KD Cyber Solutions · Germantown, MD</div>
+    <div class="footer-links">
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
-  </div>
-</nav>
-
-<section class="section">
-  <h2>About</h2>
-
-  <p style="color:#b7c4d6; max-width:700px; margin:auto;">
-    KD Cyber Solutions combines IT support and cybersecurity practices to help organizations operate securely and efficiently.
-    We specialize in vulnerability management, system hardening, and security monitoring.
-  </p>
-</section>
-
-<footer class="footer">
-  © 2026 KD Cyber Solutions
-</footer>
+  </footer>
 
 </div>
 </body>
