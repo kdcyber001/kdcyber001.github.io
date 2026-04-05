@@ -7,14 +7,11 @@
   <meta name="description" content="Hands-on cybersecurity and cloud projects by KD Cyber Solutions, including Azure SIEM lab builds using Microsoft Sentinel.">
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* ── Page-specific styles ── */
     .page-hero {
       padding: 100px 0 60px;
       text-align: center;
     }
-    .page-hero .section-label {
-      margin-bottom: 14px;
-    }
+    .page-hero .section-label { margin-bottom: 14px; }
     .page-hero h1 {
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 700;
@@ -28,8 +25,6 @@
       font-size: 1.05rem;
       line-height: 1.7;
     }
-
-    /* Project card */
     .project-card {
       background: var(--card-bg, rgba(255,255,255,0.03));
       border: 1px solid var(--card-border, rgba(255,255,255,0.08));
@@ -41,7 +36,6 @@
       transform: translateY(-4px);
       border-color: rgba(29,228,198,0.35);
     }
-
     .project-banner {
       background: linear-gradient(135deg, #0d1f2d 0%, #0a2a3a 50%, #0d1f2d 100%);
       padding: 36px 32px;
@@ -59,24 +53,16 @@
         radial-gradient(ellipse at 20% 50%, rgba(29,228,198,0.12) 0%, transparent 60%),
         radial-gradient(ellipse at 80% 20%, rgba(61,159,255,0.10) 0%, transparent 55%);
     }
-    .project-banner-icon {
-      font-size: 3rem;
-      position: relative;
-      z-index: 1;
-    }
+    .project-banner-icon { font-size: 3rem; position: relative; z-index: 1; }
     .project-banner-tag {
       position: absolute;
-      top: 18px;
-      right: 18px;
+      top: 18px; right: 18px;
       background: rgba(29,228,198,0.15);
       border: 1px solid rgba(29,228,198,0.3);
       color: #1de4c6;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 20px;
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 20px;
     }
     .project-banner-tag.live {
       background: rgba(29,228,198,0.2);
@@ -87,119 +73,43 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.6; }
     }
-
-    .project-body {
-      padding: 28px 32px 32px;
-    }
-    .project-body h3 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-    .project-body p {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      opacity: 0.72;
-      margin-bottom: 20px;
-    }
-
-    /* Highlights list */
+    .project-body { padding: 28px 32px 32px; }
+    .project-body h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 10px; }
+    .project-body p { font-size: 0.95rem; line-height: 1.7; opacity: 0.72; margin-bottom: 20px; }
     .project-highlights {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      list-style: none; padding: 0; margin: 0 0 24px;
+      display: flex; flex-direction: column; gap: 8px;
     }
     .project-highlights li {
-      font-size: 0.88rem;
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      opacity: 0.85;
+      font-size: 0.88rem; display: flex; align-items: flex-start; gap: 8px; opacity: 0.85;
     }
-    .project-highlights li::before {
-      content: '→';
-      color: #1de4c6;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    /* Tech tags */
-    .tech-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
+    .project-highlights li::before { content: '→'; color: #1de4c6; flex-shrink: 0; margin-top: 1px; }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
     .tech-tag {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      padding: 4px 10px;
-      border-radius: 6px;
-      background: rgba(61,159,255,0.1);
-      border: 1px solid rgba(61,159,255,0.2);
-      color: #3d9fff;
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em;
+      padding: 4px 10px; border-radius: 6px;
+      background: rgba(61,159,255,0.1); border: 1px solid rgba(61,159,255,0.2); color: #3d9fff;
     }
-
-    /* Stats row */
     .project-stats {
-      display: flex;
-      gap: 24px;
-      padding: 18px 0;
+      display: flex; gap: 24px; padding: 18px 0;
       border-top: 1px solid rgba(255,255,255,0.06);
       border-bottom: 1px solid rgba(255,255,255,0.06);
       margin-bottom: 24px;
     }
-    .project-stat {
-      text-align: center;
-      flex: 1;
-    }
+    .project-stat { text-align: center; flex: 1; }
     .project-stat-number {
-      display: block;
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #1de4c6;
-      line-height: 1;
-      margin-bottom: 4px;
+      display: block; font-size: 1.3rem; font-weight: 700;
+      color: #1de4c6; line-height: 1; margin-bottom: 4px;
     }
-    .project-stat-label {
-      font-size: 0.72rem;
-      opacity: 0.55;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 28px;
-    }
-
-    /* Coming soon card */
-    .project-card.coming-soon {
-      opacity: 0.5;
-      pointer-events: none;
-    }
-    .project-card.coming-soon .project-banner {
-      background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
-    }
-
+    .project-stat-label { font-size: 0.72rem; opacity: 0.55; text-transform: uppercase; letter-spacing: 0.06em; }
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 28px; }
+    .project-card.coming-soon { opacity: 0.5; pointer-events: none; }
+    .project-card.coming-soon .project-banner { background: linear-gradient(135deg, #111 0%, #1a1a1a 100%); }
     @media (max-width: 600px) {
-      .project-grid {
-        grid-template-columns: 1fr;
-      }
-      .project-banner {
-        padding: 28px 24px;
-      }
-      .project-body {
-        padding: 22px 24px 26px;
-      }
-      .project-stats {
-        gap: 12px;
-      }
+      .project-grid { grid-template-columns: 1fr; }
+      .project-banner { padding: 28px 24px; }
+      .project-body { padding: 22px 24px 26px; }
+      .project-stats { gap: 12px; }
     }
   </style>
 </head>
@@ -220,7 +130,6 @@
     </div>
   </nav>
 
-  <!-- Page Hero -->
   <section class="page-hero">
     <div class="section-label">Hands-On Lab Work</div>
     <h1>Projects &amp; Lab Builds</h1>
@@ -229,11 +138,10 @@
 
   <div class="divider"></div>
 
-  <!-- Projects Grid -->
   <section class="section">
     <div class="project-grid">
 
-      <!-- SIEM Lab Project -->
+      <!-- SIEM Lab -->
       <div class="project-card">
         <div class="project-banner">
           <div class="project-banner-tag live">● Live Lab</div>
@@ -241,10 +149,7 @@
         </div>
         <div class="project-body">
           <h3>Azure SIEM Lab — Microsoft Sentinel</h3>
-          <p>
-            Deployed a cloud-based Security Information and Event Management (SIEM) system using Microsoft Sentinel on Azure. Configured live threat detection against real-world brute force attacks targeting an exposed Windows Server VM.
-          </p>
-
+          <p>Deployed a cloud-based SIEM using Microsoft Sentinel on Azure. Configured live threat detection against real-world brute force attacks targeting an exposed Windows Server VM.</p>
           <div class="project-stats">
             <div class="project-stat">
               <span class="project-stat-number">67K+</span>
@@ -259,7 +164,6 @@
               <span class="project-stat-label">Threat Data</span>
             </div>
           </div>
-
           <ul class="project-highlights">
             <li>Provisioned Windows Server 2022 VM in Azure with intentionally exposed RDP to simulate a honeypot environment</li>
             <li>Connected VM to a Log Analytics Workspace and enabled Microsoft Sentinel as the SIEM layer</li>
@@ -269,7 +173,6 @@
             <li>Observed and analyzed over 67,000 real brute force attempts from global threat actors within hours of deployment</li>
             <li>Hardened NSG by restricting RDP access to a single authorized IP after data collection</li>
           </ul>
-
           <div class="tech-tags">
             <span class="tech-tag">Microsoft Sentinel</span>
             <span class="tech-tag">Azure</span>
@@ -279,9 +182,55 @@
             <span class="tech-tag">NSG</span>
             <span class="tech-tag">Azure Monitor Agent</span>
           </div>
-
           <div style="display:flex; gap:10px; flex-wrap:wrap;">
             <a class="btn btn-primary" href="https://github.com/kdcyber001/azure-siem-lab" target="_blank">View on GitHub ↗</a>
+            <a class="btn btn-secondary" href="contact.html">Discuss This Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vulnerability Assessment Lab -->
+      <div class="project-card">
+        <div class="project-banner">
+          <div class="project-banner-tag live">● Completed</div>
+          <div class="project-banner-icon">🔍</div>
+        </div>
+        <div class="project-body">
+          <h3>Vulnerability Assessment Lab — Nessus Essentials</h3>
+          <p>Conducted a real-world vulnerability assessment across 3 live network hosts using Nessus Essentials. Identified, analyzed, and documented findings including a High severity vulnerability with full CVE and CVSS scoring analysis.</p>
+          <div class="project-stats">
+            <div class="project-stat">
+              <span class="project-stat-number">3</span>
+              <span class="project-stat-label">Hosts Scanned</span>
+            </div>
+            <div class="project-stat">
+              <span class="project-stat-number">1</span>
+              <span class="project-stat-label">High Finding</span>
+            </div>
+            <div class="project-stat">
+              <span class="project-stat-number">2</span>
+              <span class="project-stat-label">Medium Findings</span>
+            </div>
+          </div>
+          <ul class="project-highlights">
+            <li>Installed and activated Nessus Essentials on macOS — configured scan policies and live targets</li>
+            <li>Scanned 3 live network hosts including router and endpoints across a live /24 subnet</li>
+            <li>Identified 1 High severity finding on endpoint host with full CVE and CVSS v3 analysis</li>
+            <li>Identified Medium severity misconfiguration on network router — documented remediation steps</li>
+            <li>Analyzed 90+ informational findings to map network attack surface and exposed services</li>
+            <li>Exported full Nessus vulnerability report and documented findings in structured assessment format</li>
+            <li>Applied NIST 800-53 risk prioritization to rank findings by exploitability and business impact</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Nessus Essentials</span>
+            <span class="tech-tag">CVE Analysis</span>
+            <span class="tech-tag">CVSS Scoring</span>
+            <span class="tech-tag">NIST 800-53</span>
+            <span class="tech-tag">Network Scanning</span>
+            <span class="tech-tag">Risk Assessment</span>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="https://github.com/kdcyber001/vulnerability-assessment-lab" target="_blank">View on GitHub ↗</a>
             <a class="btn btn-secondary" href="contact.html">Discuss This Project</a>
           </div>
         </div>
@@ -305,56 +254,11 @@
         </div>
       </div>
 
-      <div class="project-card">
-<div class="project-banner">
-<div class="project-banner-tag live">Completed</div>
-<div class="project-banner-icon">■</div>
-</div>
-<div class="project-body">
-<h3>Vulnerability Assessment Lab</h3>
-<p>
-Performed end-to-end vulnerability assessments using Nessus
-Essentials. Phase 1 scanned a live home network. Phase 2
-deployed a misconfigured Ubuntu VM in Azure for a credentialed
-cloud scan, with documented remediation and verification.
-</p>
-<ul class="project-highlights">
-<li>Installed and configured Nessus Essentials on macOS</li>
-<li>Conducted unauthenticated home network scan across all
-live hosts</li>
-<li>Deployed intentionally misconfigured Ubuntu Server 20.04
-in Azure with unnecessary open ports</li>
-<li>Ran credentialed Nessus scan — authenticated access for
-deeper internal findings</li>
-<li>Documented CVEs, CVSS scores, and remediation steps
-for all Critical and High findings</li>
-<li>Remediated open FTP/Telnet ports and verified fix
-with re-scan — before/after comparison documented</li>
-</ul>
-<div class="tech-tags">
-<span class="tech-tag">Nessus Essentials</span>
-<span class="tech-tag">Azure</span>
-<span class="tech-tag">Ubuntu Server</span>
-<span class="tech-tag">CVE Analysis</span>
-<span class="tech-tag">CVSS Scoring</span>
-<span class="tech-tag">Credentialed Scan</span>
-</div>
-<div style="display:flex; gap:10px; flex-wrap:wrap;">
-<a class="btn btn-primary"
-href="https://github.com/kdcyber001/vulnerability-assessment-lab"
-target="_blank">View on GitHub ■</a>
-<a class="btn btn-secondary" href="contact.html">
-Discuss This Project</a>
-</div>
-</div>
-</div>
-
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- CTA -->
   <section style="padding: 40px 0 80px; text-align:center;">
     <div class="card" style="padding: 52px 36px; background: linear-gradient(135deg, rgba(29,228,198,0.07), rgba(61,159,255,0.07)); border-color: rgba(29,228,198,0.2);">
       <div class="section-label" style="margin-bottom:14px;">Let's Connect</div>
