@@ -11,7 +11,7 @@
 <body>
 <div class="container">
 
-  <nav class="nav">
+  <nav class="nav" id="main-nav">
     <div class="nav-inner">
       <a class="brand" href="index.html">KD <span>Cyber Solutions</span></a>
       <div class="nav-links">
@@ -19,135 +19,106 @@
         <a href="services.html">Services</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Get in Touch</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <!-- Hero — full width with image background -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="badge">Cybersecurity &amp; IT Support Services</div>
-    <h1>Secure systems.<br>Reliable operations.</h1>
-    <p class="hero-sub">
-      KD Cyber Solutions helps federal agencies and small businesses strengthen
-      security posture, reduce risk, and maintain dependable IT environments.
-    </p>
-    <p class="hero-tagline">Built for government contractors &amp; small businesses</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="contact.html">Get in Touch</a>
-      <a class="btn btn-secondary" href="services.html">View Services</a>
-      <a class="btn btn-secondary" href="KD_Cyber_Solutions_Capability_Statement01.pdf" target="_blank">
-        Capability Statement ↗
-      </a>
+  <section class="hero">
+    <div class="hero-accent-bar"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-body">
+      <div class="hero-text">
+        <div class="badge">Cybersecurity &amp; IT Support Services</div>
+        <h1 id="typed-heading">&nbsp;</h1>
+        <p class="hero-sub">KD Cyber Solutions helps federal agencies and small businesses strengthen security posture, reduce risk, and maintain dependable IT environments.</p>
+        <p class="hero-tagline">Built for government contractors &amp; small businesses</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Get in Touch</a>
+          <a class="btn btn-secondary" href="services.html">View Services</a>
+          <a class="btn btn-secondary" href="KD_Cyber_Solutions_Capability_Statement01.pdf" target="_blank">Cap Statement ↗</a>
+        </div>
+      </div>
+      <div class="hero-stats-panel">
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-target="6" data-suffix="+">0+</span>
+          <span class="hero-stat-label">Certifications</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-target="7" data-suffix="">0</span>
+          <span class="hero-stat-label">NAICS Codes</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">SAM</span>
+          <span class="hero-stat-label">Registered</span>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Stats -->
-  <div class="stats-bar">
-    <div class="stat">
-      <span class="stat-number">6+</span>
-      <span class="stat-label">Certifications</span>
-    </div>
-    <div class="stat">
-      <span class="stat-number">7</span>
-      <span class="stat-label">NAICS Codes</span>
-    </div>
-    <div class="stat">
-      <span class="stat-number">SAM</span>
-      <span class="stat-label">Registered</span>
-    </div>
-  </div>
+  <div class="divider" style="margin-top:48px;"></div>
 
-  <div class="divider"></div>
-
-  <!-- Core Services Preview -->
   <section class="section">
-    <div class="section-header">
+    <div class="section-header reveal">
       <div class="section-label">What We Do</div>
       <h2 class="section-title">End-to-end IT &amp;<br>security coverage</h2>
-      <p class="section-desc">
-        From day-to-day IT support to advanced vulnerability assessments, we deliver
-        solutions built around federal compliance standards and mission readiness.
-      </p>
+      <p class="section-desc">From day-to-day IT support to advanced vulnerability assessments, we deliver solutions built around federal compliance standards and mission readiness.</p>
     </div>
-
     <div class="grid grid-2">
-
-      <div class="card">
+      <div class="card reveal reveal-delay-1">
         <div class="card-icon">🛡️</div>
         <h3>Cybersecurity Services</h3>
-        <p>Vulnerability assessments, system hardening, security monitoring, and
-        risk management aligned to NIST 800-53 and CMMC frameworks.</p>
+        <p>Vulnerability assessments, system hardening, security monitoring, and risk management aligned to NIST 800-53 and CMMC frameworks.</p>
       </div>
-
-      <div class="card">
+      <div class="card reveal reveal-delay-2">
         <div class="card-icon">💻</div>
         <h3>IT Support &amp; Administration</h3>
-        <p>Help desk support, endpoint management, Active Directory administration,
-        and infrastructure maintenance for government and commercial clients.</p>
+        <p>Help desk support, endpoint management, Active Directory administration, and infrastructure maintenance for government and commercial clients.</p>
       </div>
-
-      <div class="card">
+      <div class="card reveal reveal-delay-3">
         <div class="card-icon">☁️</div>
         <h3>Cloud &amp; Infrastructure</h3>
-        <p>Azure-based cloud deployments, migrations, and ongoing management.
-        Certified in Microsoft Azure Fundamentals with hands-on enterprise experience.</p>
+        <p>Azure-based cloud deployments, migrations, and ongoing management. Certified in Microsoft Azure Fundamentals with hands-on enterprise experience.</p>
       </div>
-
-      <div class="card">
+      <div class="card reveal reveal-delay-4">
         <div class="card-icon">📋</div>
         <h3>Compliance &amp; Consulting</h3>
-        <p>Security policy development, compliance gap analysis, and IT consulting
-        to help organizations meet federal procurement and audit requirements.</p>
+        <p>Security policy development, compliance gap analysis, and IT consulting to help organizations meet federal procurement and audit requirements.</p>
       </div>
-
     </div>
-
-    <div style="text-align:center; margin-top:36px;">
+    <div style="text-align:center; margin-top:36px;" class="reveal">
       <a class="btn btn-secondary" href="services.html">See All Services →</a>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Why KD Section -->
   <section class="section">
-    <div class="section-header center">
-      <div class="section-label">Why KD Cyber Solutions</div>
+    <div class="section-header center reveal">
+      <div class="section-label" style="justify-content:center;">Why KD Cyber Solutions</div>
       <h2 class="section-title">Credentials that matter<br>in federal contracting</h2>
     </div>
-
     <div class="grid grid-2">
-
-      <div class="card" style="text-align:center;">
+      <div class="card reveal reveal-delay-1" style="text-align:center;">
         <div class="card-icon" style="margin:0 auto 18px;">🏛️</div>
         <h3>SAM.gov Registered</h3>
         <p>Active registration, cleared for federal contract awards.</p>
       </div>
-
-      <div class="card" style="text-align:center;">
+      <div class="card reveal reveal-delay-2" style="text-align:center;">
         <div class="card-icon" style="margin:0 auto 18px;">⚡</div>
         <h3>Enterprise Background</h3>
         <p>Lead Implementation Engineer experience at Capgemini across large-scale enterprise IT projects.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- CTA Strip -->
-  <section style="padding: 40px 0 80px; text-align:center;">
-    <div class="card" style="padding: 52px 36px; background: linear-gradient(135deg, rgba(29,228,198,0.07), rgba(61,159,255,0.07)); border-color: rgba(29,228,198,0.2);">
-      <div class="section-label" style="margin-bottom:14px;">Ready to work together?</div>
+  <section style="padding: 40px 0 80px; text-align:center;" class="reveal">
+    <div class="card cta-card" style="padding: 52px 36px; background: linear-gradient(135deg, rgba(168,184,212,0.06), rgba(100,130,180,0.06)); border-color: rgba(168,184,212,0.18);">
+      <div class="section-label" style="margin-bottom:14px; justify-content:center;">Ready to work together?</div>
       <h2 class="section-title" style="margin-bottom:14px;">Let's talk about your<br>IT and security needs</h2>
-      <p class="section-desc" style="margin: 0 auto 32px;">
-        Whether you need a capability statement, a teaming partner, or direct services —
-        KD Cyber Solutions is ready to engage.
-      </p>
+      <p class="section-desc" style="margin: 0 auto 32px;">Whether you need a capability statement, a teaming partner, or direct services — KD Cyber Solutions is ready to engage.</p>
       <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
         <a class="btn btn-primary" href="contact.html">Get in Touch</a>
         <a class="btn btn-secondary" href="KD_Cyber_Solutions_Capability_Statement01.pdf" target="_blank">Download Cap Statement ↗</a>
@@ -167,5 +138,149 @@
   </footer>
 
 </div>
+
+<script>
+// ── 1. Typing — types both lines cleanly, no cursor after ──
+(function() {
+  const heading = document.getElementById('typed-heading');
+  const line1 = 'Secure systems.';
+  const line2 = 'Reliable operations.';
+  let text = '';
+  let phase = 0; // 0=typing line1, 1=pause, 2=typing line2, 3=done
+  let charIdx = 0;
+
+  function tick() {
+    if (phase === 0) {
+      // Type line 1
+      text = line1.slice(0, ++charIdx);
+      heading.textContent = text;
+      if (charIdx < line1.length) {
+        setTimeout(tick, 75);
+      } else {
+        phase = 1;
+        setTimeout(tick, 600);
+      }
+    } else if (phase === 1) {
+      // Start line 2 on new line
+      charIdx = 0;
+      phase = 2;
+      tick();
+    } else if (phase === 2) {
+      // Type line 2
+      const partial = line2.slice(0, ++charIdx);
+      heading.innerHTML = line1 + '<br>' + partial;
+      if (charIdx < line2.length) {
+        setTimeout(tick, 75);
+      } else {
+        phase = 3; // done — no cursor
+      }
+    }
+  }
+
+  setTimeout(tick, 400);
+})();
+
+// ── 2. Particles ──
+(function() {
+  const canvas = document.getElementById('particle-canvas');
+  const ctx = canvas.getContext('2d');
+  let particles = [], W, H;
+
+  function resize() {
+    W = canvas.width  = canvas.offsetWidth;
+    H = canvas.height = canvas.offsetHeight;
+  }
+  resize();
+  window.addEventListener('resize', () => { resize(); init(); });
+
+  function init() {
+    particles = [];
+    const count = Math.floor((W * H) / 18000);
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * W, y: Math.random() * H,
+        r: Math.random() * 1.2 + 0.3,
+        vx: (Math.random() - 0.5) * 0.28,
+        vy: (Math.random() - 0.5) * 0.28,
+        alpha: Math.random() * 0.4 + 0.1
+      });
+    }
+  }
+  init();
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const d = Math.sqrt(dx*dx + dy*dy);
+        if (d < 110) {
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(168,184,212,${0.08 * (1 - d/110)})`;
+          ctx.lineWidth = 0.5;
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.stroke();
+        }
+      }
+    }
+    particles.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(168,184,212,${p.alpha})`;
+      ctx.fill();
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0 || p.x > W) p.vx *= -1;
+      if (p.y < 0 || p.y > H) p.vy *= -1;
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── 3. Scroll reveal ──
+(function() {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+})();
+
+// ── 4. Hero stat counter ──
+(function() {
+  document.querySelectorAll('.hero-stat-number[data-target]').forEach(el => {
+    const target = +el.dataset.target;
+    const suffix = el.dataset.suffix || '';
+    let count = 0;
+    const interval = setInterval(() => {
+      count = Math.min(count + Math.ceil(target / 30), target);
+      el.textContent = count + suffix;
+      if (count >= target) clearInterval(interval);
+    }, 50);
+  });
+})();
+
+// ── 5. Nav sticky ──
+(function() {
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+})();
+
+// ── 6. Card mouse glow ──
+(function() {
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+      card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+    });
+  });
+})();
+</script>
 </body>
 </html>
