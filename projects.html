@@ -1,47 +1,41 @@
-      <!-- Home Pentest Lab Project Card -->
-      <div class="project-card">
-        <div class="project-banner">
-          <div class="project-banner-tag live">● Live Lab</div>
-          <div class="project-banner-icon">🖥️</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projects</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pentest">Pentest Lab</a></li>
+            <li><a href="#azure">Azure SIEM Lab</a></li>
+            <li><a href="#vulnerability">Vulnerability Assessment Lab</a></li>
+            <li><a href="#coming-soon">Coming Soon</a></li>
+        </ul>
+    </nav>
+    <section class="page-hero">
+        <h1>Welcome to the Projects Page</h1>
+    </section>
+    <div class="project-grid">
+        <div class="project-card" id="home">
+            <h2>Home Pentest Lab</h2>
+            <p>Description of the Home Pentest Lab.</p>
         </div>
-        <div class="project-body">
-          <h3>Home Penetration Testing &amp; SOC Lab</h3>
-          <p>Built a fully isolated attack/detect environment using Kali Linux and Metasploitable 2 on VMware Workstation Pro. Executed a complete penetration test including network reconnaissance, exploitation, and post-exploitation analysis.</p>
-          <div class="project-stats">
-            <div class="project-stat">
-              <span class="project-stat-number">30+</span>
-              <span class="project-stat-label">Ports Discovered</span>
-            </div>
-            <div class="project-stat">
-              <span class="project-stat-number">2</span>
-              <span class="project-stat-label">CVEs Exploited</span>
-            </div>
-            <div class="project-stat">
-              <span class="project-stat-number">3/7</span>
-              <span class="project-stat-label">Hashes Cracked</span>
-            </div>
-          </div>
-          <ul class="project-highlights">
-            <li>Provisioned isolated lab environment on VMware Workstation Pro with Kali Linux attacker VM and Metasploitable 2 target</li>
-            <li>Conducted comprehensive network reconnaissance using Nmap discovering 30+ open ports and services</li>
-            <li>Executed targeted exploitation against Apache Tomcat and SSH services using Metasploit Framework</li>
-            <li>Successfully exploited CVE-2011-2523 and Java RMI registry vulnerabilities for code execution</li>
-            <li>Performed post-exploitation activities including privilege escalation and credential harvesting</li>
-            <li>Cracked 3 out of 7 password hashes using John the Ripper with dictionary and brute-force attacks</li>
-            <li>Documented full penetration test findings including attack chain, techniques (MITRE ATT&amp;CK), and remediation steps</li>
-          </ul>
-          <div class="tech-tags">
-            <span class="tech-tag">Kali Linux</span>
-            <span class="tech-tag">Metasploit Framework</span>
-            <span class="tech-tag">Nmap</span>
-            <span class="tech-tag">John the Ripper</span>
-            <span class="tech-tag">VMware Workstation Pro</span>
-            <span class="tech-tag">Metasploitable 2</span>
-            <span class="tech-tag">CVE Exploitation</span>
-          </div>
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn btn-primary" href="https://github.com/kdcyber001/home-pentest-lab" target="_blank">View on GitHub ↗</a>
-            <a class="btn btn-secondary" href="projects/home-pentest-lab.html">Read Writeup</a>
-          </div>
+        <div class="project-card" id="azure">
+            <h2>Azure SIEM Lab</h2>
+            <p>Description of the Azure SIEM Lab.</p>
         </div>
-      </div>
+        <div class="project-card" id="vulnerability">
+            <h2>Vulnerability Assessment Lab</h2>
+            <p>Description of the Vulnerability Assessment Lab.</p>
+        </div>
+        <div class="project-card" id="coming-soon">
+            <h2>Coming Soon - Active Directory Card</h2>
+            <p>Details about the upcoming Active Directory project card.</p>
+        </div>
+    </div>
+</body>
+</html>
